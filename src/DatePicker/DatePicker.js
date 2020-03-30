@@ -14,8 +14,30 @@ class DatePicker extends Component {
     window.addEventListener('click', this.addBackDrop);
   }
 
-  componentWillMount() {
+  componentWillUnmount() {
     window.removeEventListener('click', this.addBackDrop);
+  }
+
+  addBackdrop = e => {
+    if (this.state.showDatePicker && !ReactDOM.findDOMNode(this).contains(e.target))
+      this.showDatePicker(false);
+  }
+
+  showDatePicker = (showDatePicker=true) => {
+    this.setState({ showDatePicker })
+  }
+
+  render() {
+    return (
+      <div className='DatePicker'>
+        <div className='mdp-input' onClick={() => this.showDatePicker(true)}>
+          <input type='date' />
+        </div>
+        {this.state.showDatePicker ? (
+          <div className='mdp-container'></div>
+        ) : ''}
+      </div>
+    )
   }
 }
 

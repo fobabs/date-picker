@@ -39,5 +39,5 @@ See the section about [deployment](https://facebook.github.io/create-react-app/d
 ## Want to contribute
 
 * If you want to help us improve, take a minute to read the [Contribution Guidelines](/CONTRIBUTING.md) first.
-* If you find a problem with a specific code, please [open an issue](https://github.com/fobabs/10-Days-of-JS/issues/new).
+* If you find a problem with a specific code, please [open an issue](https://github.com/fobabs/date-picker/issues/new).
 * If you want to get your hands dirty by fixing issues and bugs, fork the project.
